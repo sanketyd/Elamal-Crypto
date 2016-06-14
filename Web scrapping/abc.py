@@ -6,7 +6,7 @@ c=conn.cursor()
 #c.execute('''CREATE TABLE students
 	#(name text,roll_no text,imgsrc text)''')
 
-for i in range(150100,150846):
+for i in range(13001,13820):
 	url="http://home.iitk.ac.in/~romit/studentsearch/profile.php?view="+str(i)
 	page=urllib2.urlopen(url).read()
 	soup=BeautifulSoup(page,'html.parser')
